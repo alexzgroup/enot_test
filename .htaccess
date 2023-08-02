@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^(\w+)/?(\w+)?$	index.php?controller=$1&action=$2  [L,QSA]
