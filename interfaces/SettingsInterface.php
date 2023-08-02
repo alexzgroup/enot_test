@@ -17,5 +17,5 @@ interface SettingsInterface
      * Проверяет код на валидность
      * @return mixed
      */
-    public function verificationCode();
+    public function verificationCode(): bool;
 }

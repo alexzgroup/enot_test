@@ -49,7 +49,7 @@ class Settings implements BaseModelInterface
     /**
      * @inheritDoc
      */
-    public function update()
+    public function update(int $id, $value): void
     {
         // TODO: Implement update() method.
     }
@@ -57,8 +57,11 @@ class Settings implements BaseModelInterface
     /**
      * @inheritDoc
      */
-    public function getItem()
+    public function getItem(int $id)
     {
-        // TODO: Implement getItem() method.
+        return [
+            'id' => $id,
+            'value' => '',
+        ];
     }
 }

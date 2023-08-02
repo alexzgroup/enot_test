@@ -18,8 +18,8 @@ class SettingsEmail implements SettingsInterface
     /**
      * @inheritDoc
      */
-    public function verificationCode()
+    public function verificationCode(): bool
     {
-        // TODO: Implement verificationCode() method.
+        return true;
     }
 }

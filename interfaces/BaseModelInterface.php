@@ -21,13 +21,16 @@ interface BaseModelInterface
 
     /**
      * Обновляет запись
+     * @param int $id
+     * @param $value
      * @return mixed
      */
-    public function update();
+    public function update(int $id, $value);
 
     /**
      * Получает запись по ключу
+     * @param int $id
      * @return mixed
      */
-    public function getItem();
+    public function getItem(int $id);
 }
